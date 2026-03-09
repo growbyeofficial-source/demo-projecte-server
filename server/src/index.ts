@@ -32,7 +32,7 @@ const CLIENT_URL = "https://demo-projecte.netlify.app/";
 // Middleware
 app.use(
   cors({
-    origin: CLIENT_URL || "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://demo-projecte.netlify.app/"],
     credentials: true,
   }),
 );
